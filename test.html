@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phòng với 3 bức tường</title>
+    <style>
+      body {
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .room {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .wall {
+        position: absolute;
+        height: 100%;
+        background: #666;
+        opacity: 0.9;
+      }
+
+      .front {
+        width: 100%;
+        background: #888;
+        z-index: 3;
+      }
+
+      .left {
+        width: 100px;
+        left: 0;
+        transform-origin: left;
+        transform: rotateY(60deg);
+        background: #555;
+        z-index: 2;
+      }
+
+      .right {
+        width: 100px;
+        right: 0;
+        transform-origin: right;
+        transform: rotateY(-60deg);
+        background: #555;
+        z-index: 2;
+      }
+
+      .bottom {
+        width: 100%;
+        height: 100px;
+        bottom: 0;
+        background: #444;
+        transform-origin: bottom;
+        transform: rotateX(75deg);
+        z-index: 1;
+      }
+
+      .back-corner {
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #444;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="room">
+      <div class="wall front"></div>
+      <div class="wall left"></div>
+      <div class="wall right"></div>
+      <div class="wall bottom"></div>
+      <div class="back-corner"></div>
+    </div>
+  </body>
+</html>
