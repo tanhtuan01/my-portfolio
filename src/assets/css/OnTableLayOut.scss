@@ -1,3 +1,74 @@
 .room-view {
-  background-color: red;
+  // background-color: rgb(56, 55, 55);
+  max-width: 1920px;
+  background-color: white;
+  margin: auto;
+  overflow: hidden;
+
+  .room-container {
+    display: grid;
+    grid-template-columns: 0.253fr 0.495fr 0.253fr;
+    grid-template-rows: 0.269fr 0.461fr 0.269fr;
+    gap: 1;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+    height: 100vh;
+
+    // TOP
+
+    .top-left {
+      background-color: black;
+      .ctop-left {
+        clip-path: polygon(100% 100%, 0% 16%, 0% 100%);
+        background-color: chartreuse;
+      }
+    }
+
+    .top-center {
+      background-color: black;
+    }
+
+    .top-right {
+      background-color: black;
+      .ctop-right {
+        clip-path: polygon(100% 100%, 0 100%, 100% 16%);
+        background-color: chartreuse;
+      }
+    }
+    // MID
+
+    .mid-left {
+      background-color: chartreuse;
+    }
+
+    .mid-center {
+      // background-color: green;
+    }
+
+    .mid-right {
+      background-color: chartreuse;
+    }
+
+    // BOT
+    .bot-left {
+      background-color: chartreuse;
+      .cbot-left {
+        clip-path: polygon(100% 0%, 0% 72%, 0% 100%, 100% 100%);
+        background-color: blue;
+      }
+    }
+
+    .bot-center {
+      background-color: blue;
+    }
+
+    .bot-right {
+      background-color: chartreuse;
+      .cbot-right {
+        clip-path: polygon(0% 0%, 100% 72%, 100% 100%, 0% 100%);
+        background-color: blue;
+      }
+    }
+  }
 }
