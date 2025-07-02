@@ -15,7 +15,7 @@ const Table = () => {
         transformStyle: "preserve-3d",
         transform: "rotateX(10deg) translateX(-50%)",
         left: "50%",
-        top: -50,
+        bottom: "20%",
         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)",
         zIndex: 10,
       }}
@@ -48,7 +48,7 @@ const Table = () => {
         </div>
       </div>
       {/* Các chân bàn */}
-      <div
+      {/* <div
         className="leg-top-left"
         style={{
           position: "absolute",
@@ -71,7 +71,7 @@ const Table = () => {
           bottom: "-20px",
           transform: "rotateX(-10deg)",
         }}
-      ></div>
+      ></div> */}
       <div
         className="leg-bot-left"
         style={{
@@ -79,8 +79,8 @@ const Table = () => {
           width: "10px",
           height: "100px",
           background: "rgba(100, 100, 100, 0.7)",
-          left: "15%",
-          bottom: "-100px",
+          left: "13%",
+          bottom: "-20%",
           transform: "rotateX(-5deg)",
         }}
       ></div>
@@ -91,8 +91,8 @@ const Table = () => {
           width: "10px",
           height: "100px",
           background: "rgba(100, 100, 100, 0.7)",
-          right: "15%",
-          bottom: "-100px",
+          right: "13%",
+          bottom: "-20%",
           transform: "rotateX(-5deg)",
         }}
       ></div>
